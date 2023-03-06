@@ -24,7 +24,7 @@ class onboard2 extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    "Sign Up",
+                    "User",
                     style: TextStyle(
                       fontSize: 20,
                     ),
@@ -38,7 +38,7 @@ class onboard2 extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  "Login",
+                  "Courier",
                   style: TextStyle(fontSize: 25),
                 )
               ],
