@@ -58,7 +58,19 @@ class _BuyViewState extends State<BuyView> {
               Container(
                 width: 390,
                 height: 42,
-                color: Colors.amber,
+                child: TextFormField(
+                  textAlignVertical: TextAlignVertical.bottom,
+                  decoration: InputDecoration(
+                      filled: true,
+                      fillColor: Colors.white,
+                      enabledBorder: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(9),
+                          borderSide: BorderSide(color: Color(0xFFD9D9D9))),
+                      hintText: 'What do you want?',
+                      labelStyle: TextStyle(color: Color(0xFF9A9696)),
+                      suffixIcon: Icon(Icons.search),
+                      suffixIconColor: Colors.black),
+                ),
               ),
               SizedBox(
                 height: 35,

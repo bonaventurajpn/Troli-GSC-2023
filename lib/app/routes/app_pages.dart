@@ -12,6 +12,8 @@ import '../modules/buy/bindings/buy_binding.dart';
 import '../modules/buy/views/buy_view.dart';
 import '../modules/cart/bindings/cart_binding.dart';
 import '../modules/cart/views/cart_view.dart';
+import '../modules/courier/bindings/courier_binding.dart';
+import '../modules/courier/views/courier_view.dart';
 import '../modules/empty_cart/bindings/empty_cart_binding.dart';
 import '../modules/empty_cart/views/empty_cart_view.dart';
 import '../modules/frozen_food/bindings/frozen_food_binding.dart';
@@ -46,6 +48,8 @@ import '../modules/ob2/bindings/ob2_binding.dart';
 import '../modules/ob2/views/ob2_view.dart';
 import '../modules/payment/bindings/payment_binding.dart';
 import '../modules/payment/views/payment_view.dart';
+import '../modules/pengantaran/bindings/pengantaran_binding.dart';
+import '../modules/pengantaran/views/pengantaran_view.dart';
 import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/profileC/bindings/profile_c_binding.dart';
@@ -234,6 +238,16 @@ class AppPages {
       name: _Paths.PROFILE_C,
       page: () => const ProfileCView(),
       binding: ProfileCBinding(),
+    ),
+    GetPage(
+      name: _Paths.PENGANTARAN,
+      page: () => const PengantaranView(),
+      binding: PengantaranBinding(),
+    ),
+    GetPage(
+      name: _Paths.COURIER,
+      page: () => const CourierView(),
+      binding: CourierBinding(),
     ),
   ];
 }

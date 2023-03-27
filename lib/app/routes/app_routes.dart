@@ -35,6 +35,8 @@ abstract class Routes {
   static const HOME_C = _Paths.HOME_C;
   static const HOME_C2 = _Paths.HOME_C2;
   static const PROFILE_C = _Paths.PROFILE_C;
+  static const PENGANTARAN = _Paths.PENGANTARAN;
+  static const COURIER = _Paths.COURIER;
 }
 
 abstract class _Paths {
@@ -70,4 +72,6 @@ abstract class _Paths {
   static const HOME_C = '/home-c';
   static const HOME_C2 = '/home-c2';
   static const PROFILE_C = '/profile-c';
+  static const PENGANTARAN = '/pengantaran';
+  static const COURIER = '/courier';
 }

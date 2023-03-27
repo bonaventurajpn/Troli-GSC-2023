@@ -81,7 +81,11 @@ class _SignUpViewState extends State<SignUpView> {
                           icon: Icon(_isObscure
                               ? Icons.visibility
                               : Icons.visibility_off),
-                          onPressed: () {})),
+                          onPressed: () {
+                            setState(() {
+                              _isObscure = !_isObscure;
+                            });
+                          })),
                 ),
                 SizedBox(height: 20),
                 TextFormField(

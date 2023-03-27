@@ -62,7 +62,11 @@ class _LoginViewState extends State<LoginView> {
                         icon: Icon(_isObscure
                             ? Icons.visibility
                             : Icons.visibility_off),
-                        onPressed: () {}))),
+                        onPressed: () {
+                          setState(() {
+                            _isObscure = !_isObscure;
+                          });
+                        }))),
             Row(
               children: [
                 Checkbox(
