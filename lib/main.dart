@@ -8,7 +8,7 @@ void main() {
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     title: "App",
-    initialRoute: Routes.HOME,
+    initialRoute: Routes.HOME_C,
     getPages: AppPages.routes,
     theme: ThemeData(fontFamily: 'Nunito'),
   ));
@@ -30,6 +30,7 @@ void main() {
 //           return GetMaterialApp(
 //             debugShowCheckedModeBanner: false,
 //             title: "Application",
+//             theme: ThemeData(fontFamily: 'Nunito'),
 //             home: onboarding(),
 //           );
 //         }
