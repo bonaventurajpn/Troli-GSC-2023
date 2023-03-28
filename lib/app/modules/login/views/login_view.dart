@@ -5,8 +5,7 @@ import 'package:get/get.dart';
 import 'package:troli_gsc/app/modules/home/views/home_view.dart';
 import 'package:troli_gsc/app/modules/ob2/views/ob2_view.dart';
 import 'package:troli_gsc/app/modules/sign-up/views/sign_up_view.dart';
-import 'package:troli_gsc/app/routes/app_pages.dart';
-import '../controllers/login_controller.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class LoginView extends StatefulWidget {
   @override
@@ -15,7 +14,6 @@ class LoginView extends StatefulWidget {
 
 class _LoginViewState extends State<LoginView> {
   bool _isObscure = true;
-
   bool? isChecked = false;
 
   @override
