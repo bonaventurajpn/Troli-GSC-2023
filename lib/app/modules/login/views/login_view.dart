@@ -2,11 +2,21 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:troli_gsc/app/modules/home/views/home_view.dart';
+import 'package:troli_gsc/app/modules/ob2/views/ob2_view.dart';
+import 'package:troli_gsc/app/modules/sign-up/views/sign_up_view.dart';
 import 'package:troli_gsc/app/routes/app_pages.dart';
 import '../controllers/login_controller.dart';
 
-class LoginView extends GetView<LoginController> {
+class LoginView extends StatefulWidget {
+  @override
+  State<LoginView> createState() => _LoginViewState();
+}
+
+class _LoginViewState extends State<LoginView> {
   bool _isObscure = true;
+
+  bool? isChecked = false;
 
   @override
   Widget build(BuildContext context) {
@@ -15,25 +25,26 @@ class LoginView extends GetView<LoginController> {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
+          scrollDirection: Axis.vertical,
           children: [
             SizedBox(height: 20),
             Container(
               alignment: Alignment.center,
               height: 150,
               child: Image.asset(
-                "assets/logo/tekssignup.png",
+                "assets/image/signin.png",
                 fit: BoxFit.contain,
               ),
             ),
             SizedBox(height: 10),
             TextFormField(
               decoration: InputDecoration(
-                suffixIcon: new Icon(Icons.email),
+                // suffixIcon: new Icon(Icons.email),
                 filled: true,
                 fillColor: Colors.white,
                 enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(20.0),
-                    borderSide: BorderSide(width: 2)),
+                    borderRadius: BorderRadius.circular(4),
+                    borderSide: BorderSide(color: Colors.white)),
                 labelText: 'Email',
               ),
             ),
@@ -44,42 +55,52 @@ class LoginView extends GetView<LoginController> {
                     filled: true,
                     fillColor: Colors.white,
                     enabledBorder: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(20.0),
-                        borderSide: BorderSide(width: 2)),
+                        borderRadius: BorderRadius.circular(4),
+                        borderSide: BorderSide(color: Colors.white)),
                     labelText: 'Password',
                     suffixIcon: IconButton(
                         icon: Icon(_isObscure
                             ? Icons.visibility
                             : Icons.visibility_off),
-                        onPressed: () {}))),
+                        onPressed: () {
+                          setState(() {
+                            _isObscure = !_isObscure;
+                          });
+                        }))),
             Row(
               children: [
-                // Checkbox(
-                //     value: controller.checkC.value,
-                //     onChanged: (value) => controller.checkC.toggle()),
+                Checkbox(
+                  checkColor: Colors.white,
+                  value: isChecked,
+                  onChanged: (newBool) {
+                    setState(() {
+                      isChecked = newBool;
+                    });
+                  },
+                  activeColor: Colors.black,
+                ),
                 Text("Remember me"),
-                SizedBox(width: 100),
+                SizedBox(width: 80),
                 Text(
-                  "Forgot Password",
+                  "Forgot Password?",
                   textAlign: TextAlign.right,
                 )
               ],
             ),
             Container(
-              width: 60,
+              width: 336,
+              height: 50,
               child: ElevatedButton(
-                onPressed: () => Get.offAllNamed(Routes.HOME),
+                onPressed: () => Get.offAll(() => HomeView()),
                 child: Text(
-                  "Sign Up",
-                  style: TextStyle(
-                    fontSize: 20,
-                  ),
+                  "Sign In",
+                  style: TextStyle(fontSize: 25),
                 ),
                 style: ElevatedButton.styleFrom(
                   shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(15.0)),
+                      borderRadius: new BorderRadius.circular(4)),
                   primary: Color(0xFF384E20),
-                  padding: EdgeInsets.symmetric(vertical: 20),
+                  // padding: EdgeInsets.symmetric(vertical: 20),
                 ),
               ),
             ),
@@ -107,7 +128,7 @@ class LoginView extends GetView<LoginController> {
             Container(
               height: 60,
               child: ElevatedButton(
-                onPressed: () => Get.offAllNamed(Routes.HOME),
+                onPressed: () => Get.offAll(() => HomeView()),
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image.asset(
@@ -116,7 +137,7 @@ class LoginView extends GetView<LoginController> {
                   SizedBox(
                     width: 10,
                   ),
-                  Text("Sign up with Facebook",
+                  Text("Continue with Facebook",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 16,
@@ -124,7 +145,7 @@ class LoginView extends GetView<LoginController> {
                 ]),
                 style: ElevatedButton.styleFrom(
                   shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(15.0)),
+                      borderRadius: new BorderRadius.circular(4)),
                   primary: Color.fromARGB(255, 255, 255, 255),
                   padding: EdgeInsets.symmetric(vertical: 20),
                 ),
@@ -134,14 +155,14 @@ class LoginView extends GetView<LoginController> {
             Container(
               height: 60,
               child: ElevatedButton(
-                onPressed: () => Get.offAllNamed(Routes.HOME),
+                onPressed: () => Get.offAll(() => HomeView()),
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image.asset("assets/logo/google.png"),
                   SizedBox(
                     width: 10,
                   ),
-                  Text("Sign up with Google",
+                  Text("Continue with Google",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
@@ -150,7 +171,7 @@ class LoginView extends GetView<LoginController> {
                 ]),
                 style: ElevatedButton.styleFrom(
                   shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(15.0)),
+                      borderRadius: new BorderRadius.circular(4)),
                   primary: Color.fromARGB(255, 255, 255, 255),
                   padding: EdgeInsets.symmetric(vertical: 20),
                 ),
@@ -160,14 +181,14 @@ class LoginView extends GetView<LoginController> {
             Container(
               height: 60,
               child: ElevatedButton(
-                onPressed: () => Get.offAllNamed(Routes.HOME),
+                onPressed: () => Get.offAll(() => HomeView()),
                 child:
                     Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                   Image.asset("assets/logo/apple.png"),
                   SizedBox(
                     width: 10,
                   ),
-                  Text("Sign up with Apple",
+                  Text("Continue with Apple",
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
@@ -176,20 +197,38 @@ class LoginView extends GetView<LoginController> {
                 ]),
                 style: ElevatedButton.styleFrom(
                   shape: new RoundedRectangleBorder(
-                      borderRadius: new BorderRadius.circular(15.0)),
+                      borderRadius: new BorderRadius.circular(4)),
                   primary: Color.fromARGB(255, 255, 255, 255),
                   padding: EdgeInsets.symmetric(vertical: 20),
                 ),
               ),
             ),
             SizedBox(height: 30),
-            Text(
-              "Already have an account? Log in",
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 15,
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Don't have an account? ",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 18, color: Color(0xFFD2D2D2)),
+                ),
+                TextButton(
+                  onPressed: () => Get.offAll(() => SignUpView()),
+                  child: Text(
+                    "Sign up",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontSize: 18, color: Color(0x805B5656)),
+                  ),
+                ),
+              ],
             ),
+            SizedBox(
+              height: 20,
+            ),
+            InkWell(
+                onTap: () => Get.offAll(() => Ob2View()),
+                child:
+                    Text("<< Back", style: TextStyle(color: Color(0xFF384E20))))
           ],
         ),
       ),
