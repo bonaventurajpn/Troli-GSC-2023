@@ -91,7 +91,7 @@ class CartView extends GetView<CartController> {
                   ]),
               // color: Colors.amber,
               child: InkWell(
-                onTap: () => Get.to(() => AddressView()),
+                onTap: () {},
                 child: Row(children: [
                   SizedBox(
                     width: 20,
