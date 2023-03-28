@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
 
 import 'package:get/get.dart';
 import 'package:troli_gsc/app/modules/buy/views/buy_view.dart';
@@ -149,7 +150,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -217,7 +236,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -285,7 +322,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -353,7 +408,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -470,7 +543,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -538,7 +629,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -606,7 +715,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -674,7 +801,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -791,7 +936,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -859,7 +1022,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -927,7 +1108,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
@@ -995,7 +1194,25 @@ class FrozenFoodView extends GetView<FrozenFoodController> {
                                     width: 8,
                                   ),
                                   InkWell(
-                                    onTap: () {},
+                                    onTap: () {
+                                      AwesomeDialog(
+                                          context: context,
+                                          dialogType: DialogType.success,
+                                          dialogBackgroundColor: Colors.white,
+                                          animType: AnimType.topSlide,
+                                          title: "Success!",
+                                          titleTextStyle:
+                                              TextStyle(fontSize: 24),
+                                          desc: "Your item succesfully added",
+                                          descTextStyle:
+                                              TextStyle(fontSize: 20),
+                                          btnOkOnPress: () => {},
+                                          btnOkColor: Color(0xFF384E20),
+                                          btnOkText: "Ok",
+                                          buttonsTextStyle:
+                                              TextStyle(fontSize: 20))
+                                        ..show();
+                                    },
                                     child:
                                         Image.asset("assets/logo/tambah.png"),
                                   )
