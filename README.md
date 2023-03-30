@@ -1,16 +1,7 @@
-# troli_gsc
+# Troli for Google Solution Challenge 2023
 
-A new Flutter project.
+Troli is a digital application that aims to realize the 15th point in the Sustainable Development Goals, namely "Life on Land' and the 12th point, namely "Responsible Consumption and Production". food for farms that have been acquired by Trolley. Troli acquires maggot breeders and other animal breeders, such as catfish, poultry, cattle, and goats. Food waste that has been submitted to Trolley will be processed as animal feed for the acquired farms. In addition, Troli also based on e-commerce that sells the clothing needs of livestock acquired by Troli, such as meat, milk, etc. Troli rely on gamification to attract attention and appreciate users who contribute to the submission of food waste.
 
-## Getting Started
+## System Architecture
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![System Architecture](./assets/docs/information.png)
